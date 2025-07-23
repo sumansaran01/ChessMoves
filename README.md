@@ -23,38 +23,6 @@ npm start
 ```
 The React app will open at `http://localhost:3000`.
 
-## API Usage
-
-### Endpoint
-`POST /chess/:slug`
-- `:slug` is the piece name (e.g., `rook`, `queen`, `bishop`, `knight`)
-
-### Request Body Example
-```
-{
-  "postions": {
-    "Queen": "E7",
-    "Bishop": "B7",
-    "Rook": "G5",
-    "Knight": "C3"
-  }
-}
-```
-
-### Response Example
-```
-{
-  "valid_moves": ["A4", "A2", "B1", "D1"]
-}
-```
-
-## Example cURL Request
-```
-curl -X POST http://localhost:8000/chess/knight \
-  -H "Content-Type: application/json" \
-  -d '{"postions": {"Queen": "E7", "Bishop": "B7", "Rook": "G5", "Knight": "C3"}}'
-```
-
 ## Notes
 - The API returns only valid moves for the specified piece, considering blocking and capture rules.
 - The React frontend provides a chessboard UI for easy interaction. 
