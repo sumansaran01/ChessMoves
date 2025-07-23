@@ -1,4 +1,4 @@
-# VinferAi Chess API
+# ChessMoves Detector
 
 ## Overview
 This is a Node.js backend API and React frontend that lets you determine valid moves for a given chess piece (Rook, Queen, Bishop, Knight) based on the current board positions.
