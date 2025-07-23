@@ -57,7 +57,7 @@ function App() {
     setError('');
     setValidMoves([]);
     try {
-      const res = await fetch(`http://localhost:8000/chess/${selectedPiece.toLowerCase()}`, {
+      const res = await fetch(`https://chessmoves.onrender.com/chess/${selectedPiece.toLowerCase()}`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ postions: positions }),
